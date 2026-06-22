@@ -5,8 +5,12 @@ metadata:
   annotations:
     github.com/project-slug: arboleda-alejandro/myargoown
     backstage.io/techdocs-ref: dir:.
+  description: Personal ArgoCD deployment for managing Kubernetes applications
 spec:
-  type: other
+  type: service
   lifecycle: experimental
   owner: user:default/arboleda-alejandro
+  system: gitops-platform
+  dependsOn:
+    - component:argo-helm-alejo
 
